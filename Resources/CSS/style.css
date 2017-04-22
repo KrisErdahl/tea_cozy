@@ -1,4 +1,43 @@
+/* margin and padding appear to be set in the browser, throwing items out of place*/
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 69px;
+  position: fixed;
+  border-bottom: 1px solid seashell;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.name {
+  height: 50px;
+  width: auto;
+  margin-left: 10px;
+}
+
+nav {
+  flex-shrink: 0;
+}
+
+.nav-link {
+  color: seashell;
+  display: inline-block;
+  text-decoration: underline;
+  padding-left: 14px;
+  padding-right: 8px;
 }
