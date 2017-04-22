@@ -143,3 +143,18 @@ nav {
   width: 300px;
   margin: 0px 20px;
 }
+
+/* Footer section includes contact and .copyright items */
+footer {
+  height: 200px;
+  text-align: center;
+}
+
+footer h2 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+footer h5 {
+  margin-bottom: 30px;
+}
