@@ -10,6 +10,7 @@ body {
   color: seashell;
   background-color: black;
   opacity: 0.9;
+  position: relative;
 }
 
 /* fixed header section, includes .name, nav, and .nav-link items*/
@@ -156,5 +157,13 @@ footer h2 {
 }
 
 footer h5 {
+  margin-bottom: 30px;
+}
+
+/* Copyright element is relative to the body */
+.copyright {
+  position: absolute;
+  text-align: left;
+  left: 20px;
   margin-bottom: 30px;
 }
