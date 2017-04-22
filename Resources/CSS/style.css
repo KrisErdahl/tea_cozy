@@ -1,4 +1,4 @@
-/* margin and padding appear to be set in the browser, throwing items out of place*/
+/* set margin and padding to zero, avoid throwing items out of place in browser*/
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +12,7 @@ body {
   opacity: 0.9;
 }
 
+/* fixed header section, includes .name, nav, and .nav-link items*/
 header {
   display: flex;
   justify-content: space-between;
@@ -22,7 +23,7 @@ header {
   background-color: black;
   width: 100%;
   flex-wrap: wrap;
-  z-index: 20;
+  z-index: 10;
 }
 
 .name {
@@ -43,6 +44,7 @@ nav {
   padding-right: 8px;
 }
 
+/* Mission of the company section.  Includes mission-image and .statement items*/
 .mission {
   width: 100%;
   display: flex;
@@ -69,10 +71,11 @@ nav {
   top: 300px;
 }
 
+/* Tea of the Month section.  Includes .steeping (h2, h4, img) and .options items */
 .steeping {
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
   flex-direction: column;
 }
 
@@ -83,6 +86,8 @@ nav {
 
 .steeping h4 {
   margin-bottom: 15px;
+  padding: 0px 15px 10px 15px;
+  text-align: center;
 }
 
 .steeping img {
@@ -91,15 +96,50 @@ nav {
   padding: 0px 15px 10px 15px;
 }
 
-.steeping h4 {
-  padding: 0px 15px 10px 15px;
-  text-align: center;
-}
-
 .options {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   width: 1000px;
   align-content: flex-start;
+}
+
+/* Locations section.  Includes .locations-image (h2), .addresses, and .address items*/
+.locations {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.locations-image {
+  background: #000 url(../Images/img-locations-background.jpg) no-repeat;
+  width: 1200px;
+  height: 500px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.locations-image h2 {
+  margin-bottom: 15px;
+}
+
+.addresses {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.address {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  opacity: 1;
+  height: 300px;
+  width: 300px;
+  margin: 0px 20px;
 }
